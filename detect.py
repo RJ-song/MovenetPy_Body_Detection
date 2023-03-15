@@ -51,7 +51,7 @@ def draw_connections(frame, keypoints, edges, confidence):
             cv2.line(frame, (int(x1), int(y1)), (int(x2), int(y2)), (255,0,0), 2)
 
 
-cap = cv2.VideoCapture("0")
+cap = cv2.VideoCapture(0)
 while cap.isOpened():
     ret, frame = cap.read()
     
